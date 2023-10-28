@@ -227,3 +227,7 @@
       opacity: 1;
     }
   }
+
+  .navdN{
+    display: none;
+  }

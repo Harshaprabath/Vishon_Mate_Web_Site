@@ -52,13 +52,13 @@
                     <img src="./img/nave_logo-itel.png" alt="Faster Logo" width="105" height="50">
                 </h1>
             </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" style=" margin-right: 25px;" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav m-auto py-0 navstcus">
                     <a onclick="smoothScrollTo('#header')" id="home-link">Home</a>
-                    <div Class="navDrop ">
+                    <div Class="navDrop " style="margin-bottom: 21px;">
                         <ul>
                             <li><a onclick="smoothScrollTo('#literatureSurvey')"
                                     id="projectscope-link">Project_Scope</a>
@@ -86,7 +86,7 @@
                     </div>
 
                     <a onclick="smoothScrollTo('#milestones')" id="milestonnes-link">Milestones</a>
-                    <div Class="navDrop">
+                    <div Class="navDrop dovloadnone" id="hide" style="margin-bottom: 21px;">
                         <ul>
                             <li><a onclick="smoothScrollTo('#downloads')" id="downloads-link">Downloads</a>
                                 <ul>
@@ -788,6 +788,7 @@
     <!-- Milestones ends -->
 
     <!--dowload Start-->
+    <div class="dovloadnone">
     <div id="downloads" class="briteAndRoutbadding1">
         <div class="container">
             <div class="text-center pb-2">
@@ -1087,7 +1088,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div></div>
     <!--dowload end-->
 
     <!-- Team Start -->

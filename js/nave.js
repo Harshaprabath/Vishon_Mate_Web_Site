@@ -6,6 +6,7 @@ const aboutusLink = document.getElementById("aboutus-link");
 const downloadsLink = document.getElementById("downloads-link");
 const arhivementsLink = document.getElementById("arhivements-link");
 const contactusLink = document.getElementById("contactus-link");
+const hide = document.getElementById("hide");
 const ls = document.getElementById("ls");
 const rg = document.getElementById("rg");
 const ps = document.getElementById("ps");
@@ -23,6 +24,7 @@ ls.addEventListener("click", function () {
     aboutusLink.classList.remove("aclink");
     arhivementsLink.classList.remove("aclink");
     contactusLink.classList.remove("aclink");
+    hide.classList.remove("navdN");
 });
 rg.addEventListener("click", function () {
     projectscopeLink.classList.add("aclink");
@@ -32,15 +34,20 @@ rg.addEventListener("click", function () {
     aboutusLink.classList.remove("aclink");
     arhivementsLink.classList.remove("aclink");
     contactusLink.classList.remove("aclink");
+    hide.classList.remove("navdN");
+    hide.classList.remove("navdN");
+
 });
 ps.addEventListener("click", function () {
     projectscopeLink.classList.add("aclink");
     homeLink.classList.remove("aclink");
     milestonnesLink.classList.remove("aclink");
     downloadsLink.classList.remove("aclink");
-    aboutusLink.classList.remove("aclink");
+     aboutusLink.classList.remove("aclink");
     arhivementsLink.classList.remove("aclink");
     contactusLink.classList.remove("aclink");
+    hide.classList.remove("navdN");
+
 });
 ro.addEventListener("click", function () {
     projectscopeLink.classList.add("aclink");
@@ -50,6 +57,8 @@ ro.addEventListener("click", function () {
     aboutusLink.classList.remove("aclink");
     arhivementsLink.classList.remove("aclink");
     contactusLink.classList.remove("aclink");
+    hide.classList.remove("navdN");
+
 });
 m.addEventListener("click", function () {
     projectscopeLink.classList.add("aclink");
@@ -58,9 +67,11 @@ m.addEventListener("click", function () {
     downloadsLink.classList.remove("aclink");
     aboutusLink.classList.remove("aclink");
     arhivementsLink.classList.remove("aclink");
-    contactusLink.classList.remove("aclink");
+    contactusLink.classList.remove("aclink");    hide.classList.remove("navdN");
+
 });
 t.addEventListener("click", function () {
+    hide.classList.remove("navdN");
     projectscopeLink.classList.add("aclink");
     homeLink.classList.remove("aclink");
     milestonnesLink.classList.remove("aclink");
@@ -73,6 +84,7 @@ t.addEventListener("click", function () {
 homeLink.addEventListener("click", function () {
     homeLink.classList.add("aclink");
     projectscopeLink.classList.remove("aclink");
+    hide.classList.remove("navdN");
     milestonnesLink.classList.remove("aclink");
     downloadsLink.classList.remove("aclink");
     aboutusLink.classList.remove("aclink");
@@ -83,6 +95,7 @@ homeLink.addEventListener("click", function () {
 projectscopeLink.addEventListener("click", function () {
     projectscopeLink.classList.add("aclink");
     homeLink.classList.remove("aclink");
+    hide.classList.add("navdN");
     milestonnesLink.classList.remove("aclink");
     downloadsLink.classList.remove("aclink");
     aboutusLink.classList.remove("aclink");
@@ -94,6 +107,7 @@ milestonnesLink.addEventListener("click", function () {
     projectscopeLink.classList.remove("aclink");
     homeLink.classList.remove("aclink");
     downloadsLink.classList.remove("aclink");
+    hide.classList.remove("navdN");
     aboutusLink.classList.remove("aclink");
     arhivementsLink.classList.remove("aclink");
     contactusLink.classList.remove("aclink");
@@ -103,12 +117,14 @@ aboutusLink.addEventListener("click", function () {
     projectscopeLink.classList.remove("aclink");
     homeLink.classList.remove("aclink");
     downloadsLink.classList.remove("aclink");
+    hide.classList.remove("navdN");
     aboutusLink.classList.add("aclink");
     arhivementsLink.classList.remove("aclink");
     contactusLink.classList.remove("aclink");
 });
 downloadsLink.addEventListener("click", function () {
     milestonnesLink.classList.remove("aclink");
+    hide.classList.remove("navdN");
     projectscopeLink.classList.remove("aclink");
     homeLink.classList.remove("aclink");
     downloadsLink.classList.add("aclink");
@@ -120,6 +136,7 @@ p.addEventListener("click", function () {
     milestonnesLink.classList.remove("aclink");
     projectscopeLink.classList.remove("aclink");
     homeLink.classList.remove("aclink");
+    hide.classList.remove("navdN");
     downloadsLink.classList.add("aclink");
     aboutusLink.classList.remove("aclink");
     arhivementsLink.classList.remove("aclink");
@@ -131,6 +148,7 @@ d.addEventListener("click", function () {
     homeLink.classList.remove("aclink");
     downloadsLink.classList.add("aclink");
     aboutusLink.classList.remove("aclink");
+    hide.classList.remove("navdN");
     arhivementsLink.classList.remove("aclink");
     contactusLink.classList.remove("aclink");
 });
@@ -140,10 +158,12 @@ arhivementsLink.addEventListener("click", function () {
     homeLink.classList.remove("aclink");
     downloadsLink.classList.remove("aclink");
     aboutusLink.classList.remove("aclink");
+    hide.classList.remove("navdN");
     arhivementsLink.classList.add("aclink");
     contactusLink.classList.remove("aclink");
 });
 contactusLink.addEventListener("click", function () {
+    hide.classList.remove("navdN");
     milestonnesLink.classList.remove("aclink");
     projectscopeLink.classList.remove("aclink");
     homeLink.classList.remove("aclink");
