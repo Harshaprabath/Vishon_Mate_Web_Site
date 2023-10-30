@@ -204,3 +204,6 @@ if (scrollButton) {
         smoothScrollTo('#target');
     });
 }
+function refreshPage() {
+    location.reload();
+}

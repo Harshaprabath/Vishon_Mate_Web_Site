@@ -11,26 +11,43 @@
 .flip-with-rotate-logo {
     animation: flip-with-rotate-logo 4s linear infinite;
 }
+.tcr {
+    text-align: center;
+}
+.containert-fluid {
+    background-color: #f2f2f200;
+    padding: 20px 10px;
+}
+.containertc {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+.centerdt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .imgT {
-    width: 20%;
-    height: 100%;
+    
     object-fit: cover;
     -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, rgba(239, 236, 236, 0.267));
     transform-origin: center;
     transform: perspective(800px) rotateY(25deg);
     transition: 0.5s;
+    max-width: 50%;
+    height: 40%;
 }
 
 .containerT {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
-    display: flex;
+   display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
-    max-width: 400px;
+    max-width: 200px;
+    text-align: center;
+    margin: 10px;
 }
 
 .containerT:hover .imgT {
@@ -41,8 +58,6 @@
     transform: perspective(800px) rotateY(0deg);
     opacity: 1;
 }
-
 .h6T {
-
-    margin-right: 70px;
+    margin: 10px 0;
 }
