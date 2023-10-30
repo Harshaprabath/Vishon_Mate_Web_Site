@@ -64,6 +64,10 @@
     .rporobText{
     text-align: center;
     }
+
+    .splash-screen img{
+     width: 250px;   
+    }
     
 }
 
