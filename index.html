@@ -36,176 +36,202 @@
     <link href="css/reserchproblem.css" rel="stylesheet">
     <link href="css/ressposiveness.css" rel="stylesheet">
 
+    <style>
+        /* Styles for the splash screen */
+        .splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            /* Background color of the splash screen */
+            color: #fff;
+            /* Text color on the splash screen */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            /* Ensure it's on top of everything */
+        }
+    </style>
 
 
 </head>
 
 <body>
-
-    <!-- Navbar Start -->
-    <div class="container-fluid p-0 navCus">
-        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-3">
-            <a href="index.html" class="navbar-brand ml-lg-3">
-                <h1 class=" display-5 text-uppercase text-primary">
-                    <img src="./img/nave_logo.png" class="flip-with-rotate-logo " alt="Faster Logo" width="50"
-                        height="50">
-                    <img src="./img/nave_logo-itel.png" alt="Faster Logo" width="105" height="50">
-                </h1>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" style=" margin-right: 25px;"
-                data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
-                <div class="navbar-nav m-auto py-0 navstcus">
-                    <a onclick="smoothScrollTo('#header')" id="home-link">Home</a>
-                    <div Class="navDrop " style="margin-bottom: 21px;">
-                        <ul>
-                            <li><a onclick="smoothScrollTo('#literatureSurvey')"
-                                    id="projectscope-link">Project_Scope</a>
-                                <ul>
-                                    <li class="submenumenutitelN navFirstDrop"><a
-                                            onclick="smoothScrollTo('#literatureSurvey')" id="ls">Literature Survey</a>
-                                    </li>
-                                    <li class="submenumenutitelN"><a onclick="smoothScrollTo('#researchgap')"
-                                            id="rg">Research Gap</a></li>
-                                    <li class="submenumenutitelN"><a
-                                            onclick="smoothScrollTo('#researchproblemsolution')" id="ps">Research
-                                            Problem &
-                                            Solution</a></li>
-                                    <li class="submenumenutitelN"><a onclick="smoothScrollTo('#researchobjectives')"
-                                            id="ro">Research
-                                            Objectives</a>
-                                    </li>
-                                    <li class="submenumenutitelN"><a onclick="smoothScrollTo('#methodology')" id="m"
-                                            class="">Methodology</a></li>
-                                    <li class="submenumenutitelN navLastDrop"><a
-                                            onclick="smoothScrollTo('#technologies')" id="t">Technologies</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <a onclick="smoothScrollTo('#milestones')" id="milestonnes-link">Milestones</a>
-                    <div Class="navDrop dovloadnone" id="hide" style="margin-bottom: 21px;">
-                        <ul>
-                            <li><a onclick="smoothScrollTo('#downloads')" id="downloads-link">Downloads</a>
-                                <ul>
-                                    <li class="submenumenutitelN navFirstDrop"><a onclick="smoothScrollTo('#downloads')"
-                                            id="d">Documents</a></li>
-                                    <li class="submenumenutitelN navLastDrop"><a
-                                            onclick="smoothScrollTo('#presentations')" id="p">Presentations</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <a onclick="smoothScrollTo('#about')" id="aboutus-link">About</a>
-                    <a onclick="smoothScrollTo('#achievements')" id="arhivements-link">Achievements</a>
-                    <a onclick="smoothScrollTo('#contactus')" id="contactus-link">Contact</a>
-                </div>
-                <a onclick="smoothScrollTo('#vedeo')" class="btn btn-primary py-2 px-4 d-none d-lg-block">VIDEO</a>
-            </div>
-        </nav>
+    <div class="splash-screen">
+        <img src="./img/logo2.png">
+        
     </div>
-    <!-- Navbar End -->
 
-    <!-- Header Start -->
-    <div id="header" class="jumbotron jumbotron-fluid heder_img " style="width: 100%;padding: 20px;">
-        <div class="containerH">
-            <div class="containerHRIGHT ">
-                <div class="container text-center ">
-                    <h3 class="text-primary ">Vison Mate</h3>
-                    <h1 class="text-white">We will follow you and guide you <span class="blinkingH">!</span></h1>
-                    <div class="mx-auto">
-                        <div class="input-group">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary px-3 my btnH"
-                                    onclick="smoothScrollTo('#literatureSurvey')">LEARN MORE</button>
+    <!-- Main content -->
+    <div id="main-content" style="display: none;">
+        <!-- Navbar Start -->
+        <div class="container-fluid p-0 navCus">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-3">
+                <a href="index.html" class="navbar-brand ml-lg-3">
+                    <h1 class=" display-5 text-uppercase text-primary">
+                        <img src="./img/nave_logo.png" class="flip-with-rotate-logo " alt="Faster Logo" width="50"
+                            height="50">
+                        <img src="./img/nave_logo-itel.png" alt="Faster Logo" width="105" height="50">
+                    </h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" style=" margin-right: 25px;"
+                    data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                    <div class="navbar-nav m-auto py-0 navstcus">
+                        <a onclick="smoothScrollTo('#header')" id="home-link">Home</a>
+                        <div Class="navDrop " style="margin-bottom: 21px;">
+                            <ul>
+                                <li><a onclick="smoothScrollTo('#literatureSurvey')"
+                                        id="projectscope-link">Project_Scope</a>
+                                    <ul>
+                                        <li class="submenumenutitelN navFirstDrop"><a
+                                                onclick="smoothScrollTo('#literatureSurvey')" id="ls">Literature
+                                                Survey</a>
+                                        </li>
+                                        <li class="submenumenutitelN"><a onclick="smoothScrollTo('#researchgap')"
+                                                id="rg">Research Gap</a></li>
+                                        <li class="submenumenutitelN"><a
+                                                onclick="smoothScrollTo('#researchproblemsolution')" id="ps">Research
+                                                Problem &
+                                                Solution</a></li>
+                                        <li class="submenumenutitelN"><a onclick="smoothScrollTo('#researchobjectives')"
+                                                id="ro">Research
+                                                Objectives</a>
+                                        </li>
+                                        <li class="submenumenutitelN"><a onclick="smoothScrollTo('#methodology')" id="m"
+                                                class="">Methodology</a></li>
+                                        <li class="submenumenutitelN navLastDrop"><a
+                                                onclick="smoothScrollTo('#technologies')" id="t">Technologies</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a onclick="smoothScrollTo('#milestones')" id="milestonnes-link">Milestones</a>
+                        <div Class="navDrop dovloadnone" id="hide" style="margin-bottom: 21px;">
+                            <ul>
+                                <li><a onclick="smoothScrollTo('#downloads')" id="downloads-link">Downloads</a>
+                                    <ul>
+                                        <li class="submenumenutitelN navFirstDrop"><a
+                                                onclick="smoothScrollTo('#downloads')" id="d">Documents</a></li>
+                                        <li class="submenumenutitelN navLastDrop"><a
+                                                onclick="smoothScrollTo('#presentations')" id="p">Presentations</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a onclick="smoothScrollTo('#about')" id="aboutus-link">About</a>
+                        <a onclick="smoothScrollTo('#achievements')" id="arhivements-link">Achievements</a>
+                        <a onclick="smoothScrollTo('#contactus')" id="contactus-link">Contact</a>
+                    </div>
+                    <a onclick="smoothScrollTo('#vedeo')" class="btn btn-primary py-2 px-4 d-none d-lg-block">VIDEO</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Header Start -->
+        <div id="header" class="jumbotron jumbotron-fluid heder_img " style="width: 100%;padding: 20px;">
+            <div class="containerH">
+                <div class="containerHRIGHT ">
+                    <div class="container text-center ">
+                        <h3 class="text-primary ">Vison Mate</h3>
+                        <h1 class="text-white">We will follow you and guide you <span class="blinkingH">!</span></h1>
+                        <div class="mx-auto">
+                            <div class="input-group">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary px-3 my btnH"
+                                        onclick="smoothScrollTo('#literatureSurvey')">LEARN MORE</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="containerHLEFT marginH " style="margin-right: 20px;">
-                <div class="container text-center ">
-                    <div class="galleryh">
-                        <img src="./img/baner/invois.avif" alt="Two hands creating a heart and showing the sun">
-                        <img src="./img/baner/super maket.jpg" alt="The mountain">
-                        <img src="./img/baner/indoor.jpg" alt="a river">
-                        <img src="./img/baner/dree.jpg" alt="a women with a camera">
+                <div class="containerHLEFT marginH " style="margin-right: 20px;">
+                    <div class="container text-center ">
+                        <div class="galleryh">
+                            <img src="./img/baner/invois.avif" alt="Two hands creating a heart and showing the sun">
+                            <img src="./img/baner/super maket.jpg" alt="The mountain">
+                            <img src="./img/baner/indoor.jpg" alt="a river">
+                            <img src="./img/baner/dree.jpg" alt="a women with a camera">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Header End -->
+        <!-- Header End -->
 
-    <!-- Project Scope Start -->
+        <!-- Project Scope Start -->
 
-    <!-- Literature Survey Start -->
-    <div id="literatureSurvey" class="briteAndRoutbadding">
-        <div class="container">
-            <div class="text-center pb-2">
-                <h6 class="text-primary text-uppercase font-weight-bold">Project Scope</h6>
-                <h1 class="mb-4"> Literature Survey</h1>
+        <!-- Literature Survey Start -->
+        <div id="literatureSurvey" class="briteAndRoutbadding">
+            <div class="container">
+                <div class="text-center pb-2">
+                    <h6 class="text-primary text-uppercase font-weight-bold">Project Scope</h6>
+                    <h1 class="mb-4"> Literature Survey</h1>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid py-5">
-        <div class="container container_cus1 ">
-            <div class="row">
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <div class="galleryLS">
-                        <img src="./img/blind-person-with-mobilw.jpg" alt="" />
-                        <img src="./img/blind-people-sdog.jpg" alt="" />
-                        <img src="./img/roboEye.jpg" alt="" />
-                        <img src="./img/gfgvhb.png" alt="" />
-                        <img src="./img/carm enfirent ment.jpg" alt="" />
-                        <img src="./img/blind-with-dog.jpg" alt="" />
-                        <img src="./img/dog.jpg" alt="" />
+        <div class="container-fluid py-5">
+            <div class="container container_cus1 ">
+                <div class="row">
+                    <div class="col-lg-5 pb-4 pb-lg-0">
+                        <div class="galleryLS">
+                            <img src="./img/blind-person-with-mobilw.jpg" alt="" />
+                            <img src="./img/blind-people-sdog.jpg" alt="" />
+                            <img src="./img/roboEye.jpg" alt="" />
+                            <img src="./img/gfgvhb.png" alt="" />
+                            <img src="./img/carm enfirent ment.jpg" alt="" />
+                            <img src="./img/blind-with-dog.jpg" alt="" />
+                            <img src="./img/dog.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="mb-45">Visual impairment presents significant challenges to
+                            individuals, affecting their independence and overall quality
+                            of life. To address these challenges, the development of a
+                            smart mobile accessibility application that incorporates
+                            machine learning and image processing techniques has the
+                            potential to empower blind individuals. This introduction
+                            provides an overview of the importance of such an
+                            application in improving the accessibility and autonomy of
+                            visually impaired individuals.
+                            Creating a smart mobile accessibility application is one
+                            promising method to meet the demands of visually impaired
+                            people. Badave, Jagtap, Kaovasia, et al., have explored the
+                            use of an Android-based object detection system specifically
+                            designed for visually impaired individuals [4]. By using the
+                            power of technology, the application intends to improve the
+                            independence and autonomy of blind people. The program
+                            can understand and deliver auditory feedback on visual
+                            content collected by the smartphone's camera by utilizing
+                            machine learning algorithms and image processing
+                            techniques.
+                            Additionally, it provides auditory advice for navigation,
+                            allowing people to explore unfamiliar places with ease. The
+                            benefits of the smart mobile accessibility application are
+                            numerous. It enables blind people to engage in previously
+                            inaccessible activities such as exploring new areas, reading
+                            menus, identifying objects, and accessing digital content. The
+                            application improves their overall quality of life by giving
+                            real-time audio feedback, fostering independence, self
+                            reliance, and social inclusion.
+                            Test results for the smart mobile accessibility application
+                            have demonstrated its effectiveness in real-world scenarios.
+                            Several studies have reported high accuracy in object
+                            recognition, language interpretation, and navigation
+                            assistance [4]. User feedback indicates increased confidence
+                            and improved mobility for visually impaired individuals. </p>
                     </div>
                 </div>
-                <div class="col-lg-7">
-                    <p class="mb-45">Visual impairment presents significant challenges to
-                        individuals, affecting their independence and overall quality
-                        of life. To address these challenges, the development of a
-                        smart mobile accessibility application that incorporates
-                        machine learning and image processing techniques has the
-                        potential to empower blind individuals. This introduction
-                        provides an overview of the importance of such an
-                        application in improving the accessibility and autonomy of
-                        visually impaired individuals.
-                        Creating a smart mobile accessibility application is one
-                        promising method to meet the demands of visually impaired
-                        people. Badave, Jagtap, Kaovasia, et al., have explored the
-                        use of an Android-based object detection system specifically
-                        designed for visually impaired individuals [4]. By using the
-                        power of technology, the application intends to improve the
-                        independence and autonomy of blind people. The program
-                        can understand and deliver auditory feedback on visual
-                        content collected by the smartphone's camera by utilizing
-                        machine learning algorithms and image processing
-                        techniques.
-                        Additionally, it provides auditory advice for navigation,
-                        allowing people to explore unfamiliar places with ease. The
-                        benefits of the smart mobile accessibility application are
-                        numerous. It enables blind people to engage in previously
-                        inaccessible activities such as exploring new areas, reading
-                        menus, identifying objects, and accessing digital content. The
-                        application improves their overall quality of life by giving
-                        real-time audio feedback, fostering independence, self
-                        reliance, and social inclusion.
-                        Test results for the smart mobile accessibility application
-                        have demonstrated its effectiveness in real-world scenarios.
-                        Several studies have reported high accuracy in object
-                        recognition, language interpretation, and navigation
-                        assistance [4]. User feedback indicates increased confidence
-                        and improved mobility for visually impaired individuals. </p>
-                </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!-- Literature Survey End -->
@@ -1410,7 +1436,7 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn  btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
+    </div>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -1429,6 +1455,15 @@
     <script src="js/nave.js"></script>
     <script src="js/researchgap.js"></script>
     <script src="js/contact.js"></script>
+    <script>
+        // Simulate a delay for demonstration purposes
+        setTimeout(function () {
+            // Hide the splash screen and show the main content
+            document.querySelector('.splash-screen').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+        }, 3000); // Change 3000 to your desired loading time in milliseconds
+    </script>
+
 </body>
 
 </html>
