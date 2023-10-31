@@ -89,3 +89,7 @@
        }
   
 }
+.borderAPP{
+    padding: 5%; /* Adjust this value to control the border width */
+    border: 3px solid rgb(0, 213, 255);
+}
